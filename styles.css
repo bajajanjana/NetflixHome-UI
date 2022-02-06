@@ -66,11 +66,12 @@ nav img {
   border-radius: 2px;
   padding: 0.5rem 1.375rem;
   height:2rem;
-  width: 7rem;
+  width:6.5rem;
 }
 .navButton-footer
 {
   height:2.5rem;
+  font-size: 1rem;
 }
 .landingTextDiv {
   width: 100%;
