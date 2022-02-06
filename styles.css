@@ -45,9 +45,15 @@ body {
 nav {
   z-index: 2;
 }
+.landingText h1{
+  font-size:3rem;
+}
 .landingText h2 {
   font-size: 1.4rem;
   font-weight:400;
+}
+.logo-div{
+  width:8rem;
 }
 nav {
   justify-content: space-between;
@@ -66,7 +72,6 @@ nav img {
   border-radius: 2px;
   padding: 0.5rem 1.375rem;
   height:2rem;
-  width:6.5rem;
 }
 .navButton-footer
 {
@@ -87,7 +92,7 @@ nav img {
 }
 .landingText h3 {
   font-size: 1.2rem;
-  font-weight: lighter;
+  /* font-weight:; */
 }
 .navInput {
   height: 3.2rem;
@@ -178,6 +183,10 @@ input:focus{
 select:focus{
   border:1px solid #fff;
 }
+.getStarted-button{
+  align-items: center;
+  justify-content: center;
+}
 /* .img-div img{
   max-width: 80%;
 } */
@@ -259,7 +268,7 @@ select:focus{
 @media (max-width: 768px) {
   .landingText {
     font-size: 1.3rem;
-    width: 80vw;
+    width: 90vw;
   }
   .netflixCard {
     display: flex;
@@ -279,6 +288,10 @@ select:focus{
     padding-bottom: 0.7rem;
     
   }
+  .ques-list {
+    width: 80vw;
+  }
+
 }
 @media (max-width: 480px) {
   .landingSection {
@@ -319,5 +332,11 @@ select:focus{
   .footer-list>span{
     flex:50%;
     max-width: 50%;
+  }
+  .ques-list {
+    width: 90vw;
+  }
+  .ques-card-input{
+    width: 70vw;
   }
 }
