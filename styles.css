@@ -45,9 +45,6 @@ body {
 nav {
   z-index: 2;
 }
-.landingText h1{
-  font-size:3rem;
-}
 .landingText h2 {
   font-size: 1.4rem;
   font-weight:400;
