@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #333;
+  color: #f3f3f3;
+  font-size: 16px;
+}
+.body-container {
+  gap: 0.5rem;
+  width: 100%;
+}
+.landingSection {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./Assets/landingbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-size: 1.5rem;
+}
+.landingSection::before {
+  position: absolute;
+  content: " ";
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0.2) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.landingText h1,
+.landingText h2,
+.landingText h3,
+nav {
+  z-index: 2;
+}
+.landingText h2 {
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+nav {
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+nav li {
+  margin-right: 1rem;
+  padding-top: 1rem;
+}
+nav img {
+  width: 8.375rem;
+  height: 4.25rem;
+}
+.navButton {
+  border-radius: 2px;
+  padding: 0.5rem 1.375rem;
+}
+.landingTextDiv {
+  width: 100%;
+}
+.landingText {
+  gap: 1rem;
+  height: 100%;
+  width: 50vw;
+  font-size: 1.6rem;
+}
+.netflixCard-container h1 {
+  font-size: 3rem;
+}
+.landingText h3 {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+.navInput {
+  height: 3.2rem;
+}
+.navInput{
+  font-size:1rem;
+}
+input {
+  padding-left: 1rem;
+}
+.netflixCard-outerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.netflixCard {
+  width: 100%;
+  height: 100%;
+  margin: 1rem;
+  padding: 4rem 4rem;
+  gap: 10rem;
+}
+.netflixCard-container {
+  gap: 1rem;
+}
+.netflixCard-container h2 {
+  font-weight: 100;
+}
+.img-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ques-card {
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+}
+.ques-list {
+  gap: 1rem;
+  width: 60vw;
+}
+.ques-card-input{
+  width: 55vw;
+  gap:1rem;
+  
+}
+.list-box {
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: #fff;
+  justify-content: space-between;
+  font-size: 1.8rem;
+}
+footer{
+  padding-top:4rem;
+  padding-bottom:4rem;
+  padding-right: 2rem;
+  margin: auto;
+  width: 100%;
+  color: #757575;
+}
+footer *{
+  color: #757575;
+}
+.footer-list *{
+  font-size: 13px;
+}
+.footer-list>span{
+  flex:25%;
+  max-width: 25%;
+  padding-bottom: 1.5rem;
+  padding-right: 1rem;
+}
+.footer-div
+{
+  width: 60vw;
+  margin: auto;
+  gap:3rem;
+}
+.navButton-lang{
+  color: #333;
+}
+input:focus{
+  border: none;
+}
+select:focus{
+  border:1px solid #fff;
+}
+/* .img-div img{
+  max-width: 80%;
+} */
+@media (max-width: 1200px) {
+  .landingText {
+    width: 60vw;
+  }
+  .netflixCard {
+    gap: 6rem;
+  }
+}
+@media (max-width: 946px) {
+  .landingText {
+    width: 60vw;
+  }
+  .netflixCard {
+    flex-direction: column !important;
+    gap: 3rem;
+  }
+  .netflixCard-container {
+    text-align: center;
+  }
+  .netflixCard-container h1 {
+    font-size: 2.5rem;
+  }
+  .netflixCard > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0 4rem; */
+  }
+  .ques-list {
+    width: 70vw;
+  }
+  .list-box {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+  .ques-card-input{
+    width: 60vw;
+  }
+  .footer-div{
+    width:70vw;
+  }
+  .footer-list>span{
+    padding-bottom: 0.9rem;
+  }
+  .navInput-div
+  {
+    flex-direction: column;
+    gap:1rem;
+    height: 7rem;
+  }
+  .getStarted-button
+  {
+    height: 4rem;
+    flex: 50% !important;
+    width:40%;
+    margin: auto;
+  }
+  /* .input-mail-box
+  {
+    flex-direction: column;
+    gap:1rem;
+    height:4rem;
+  }
+  .input-mail-box input{
+     height: 40%;
+  }
+  .input-mail-box button{
+    height: 40%;
+  } */
+  
+}
+@media (max-width: 768px) {
+  .landingText {
+    font-size: 1.3rem;
+    width: 80vw;
+  }
+  .netflixCard {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column !important;
+    padding: 2rem 0rem;
+  }
+  .netflixCard-container h1 {
+    font-size: 2rem;
+  }
+  .netflixCard-container {
+    text-align: center;
+  }
+  .footer-list>span{
+    flex:33.3%;
+    max-width: 33.3%;
+    padding-bottom: 0.7rem;
+    
+  }
+}
+@media (max-width: 480px) {
+  .landingSection {
+    height: 80vh;
+  }
+  .landingText {
+    font-size: small;
+    width: 80vw;
+  }
+  button {
+    font-size: xx-small;
+  }
+  .netflixCard {
+    flex-direction: column !important;
+  }
+  .netflixCard-container h1 {
+    font-size: 1.8rem;
+  }
+  .netflixCard-container h2 {
+    font-size: 1rem;
+  }
+  .netflixCard-container {
+    text-align: center;
+  }
+  .navButton {
+    border-radius: 2px;
+    padding: 0.2rem 1rem;
+  }
+  nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  nav li {
+    margin-right: 0.5rem;
+    padding-top: 1rem;
+  }
+  .footer-list>span{
+    flex:50%;
+    max-width: 50%;
+  }
+}
