@@ -68,7 +68,7 @@ nav img {
 .navButton {
   border-radius: 2px;
   padding: 0.5rem 1.375rem;
-  height:2rem;
+  /* height:2.2rem; */
 }
 .navButton-footer
 {
@@ -175,10 +175,12 @@ footer *{
   color: #333;
 }
 input:focus{
-  border: none;
+  outline: none;
+
 }
 select:focus{
   border:1px solid #fff;
+  outline: none;
 }
 .getStarted-button{
   align-items: center;
